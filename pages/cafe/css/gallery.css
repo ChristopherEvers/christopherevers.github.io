@@ -61,12 +61,6 @@ a {
 #line {
   border: 1px solid black;
 }
-#home {
-  margin-right: 0.8%;
-}
-#faq {
-  margin-right: 0.2%;
-}
 #repeat {
   margin-top: 100vh;
   height: 80vh;
