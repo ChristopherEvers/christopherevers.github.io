@@ -22,7 +22,7 @@ ul {
   list-style-type: none;
   text-align: justify;
   min-width: 500px;
-  padding: 0;
+  padding: 2% 0 0;
   margin: 0;
 }
 ul::after {
@@ -66,7 +66,7 @@ a {
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 13vh 5% 1fr 10%;
+  grid-template-rows: 11vh 10vh 60vh 10vh;
   grid-column-gap: 16px;
   grid-row-gap: 0px;
 
@@ -78,7 +78,6 @@ a {
   grid-area: 1 / 1 / 2 / 5;
 
   display: flex;
-  margin-bottom: 3%;
   justify-content: center;
   align-items: center;
 }
@@ -91,7 +90,6 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 2% 0 10%;
 }
 .div4 {
   grid-area: 4 / 1 / 5 / 2;

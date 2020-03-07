@@ -22,7 +22,7 @@ ul {
   list-style-type: none;
   text-align: justify;
   min-width: 500px;
-  padding: 0;
+  padding: 2% 0 0;
   margin: 0;
 }
 ul::after {
@@ -63,7 +63,8 @@ a {
 }
 #repeat {
   margin-top: 100vh;
-  height: 80vh;
+  height: 180vh;
+  width: auto;
   content: '';
   background-image: url(../images/background.jpg);
   opacity: 0.25;
