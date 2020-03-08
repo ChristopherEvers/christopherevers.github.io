@@ -1,7 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 body::after {
   content: '';
@@ -78,11 +77,11 @@ a {
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 11vh 10vh 60vh;
+  grid-template-rows: 11vh 10vh 70vh;
   grid-column-gap: 16px;
   grid-row-gap: 0px;
 
-  padding-left: 20%;
+  padding-left: 10%;
   max-width: 80%;
 }
 .div1 {

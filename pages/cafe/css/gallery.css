@@ -82,7 +82,7 @@ a {
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 13vh 5% 1fr;
+  grid-template-rows: 11vh 10vh 1500px;
   grid-column-gap: 16px;
   grid-row-gap: 0px;
 
@@ -93,7 +93,6 @@ a {
   grid-area: 1 / 1 / 2 / 4;
 
   display: flex;
-  margin-bottom: 3%;
   justify-content: center;
   align-items: center;
 }
