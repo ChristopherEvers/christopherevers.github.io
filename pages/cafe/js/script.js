@@ -50,16 +50,16 @@ function clickChecker() {
           orderSection.appendChild(itemsAdded);
           break;
         case 'scone':
-          totalCost = parseFloat(totalCost) + 1.95;
+          totalCost = parseFloat(totalCost) + 2.95;
           itemsAdded = document.createElement('option');
-          itemsAdded.appendChild(document.createTextNode('$1.95 - Scone'));
+          itemsAdded.appendChild(document.createTextNode('$2.95 - Scone'));
           itemsAdded.value = 'scone';
           orderSection.appendChild(itemsAdded);
           break;
         case 'biscotti':
-          totalCost = parseFloat(totalCost) + 2.95;
+          totalCost = parseFloat(totalCost) + 1.95;
           itemsAdded = document.createElement('option');
-          itemsAdded.appendChild(document.createTextNode('$2.95 - Biscotti'));
+          itemsAdded.appendChild(document.createTextNode('$1.95 - Biscotti'));
           itemsAdded.value = 'biscotti';
           orderSection.appendChild(itemsAdded);
           break;

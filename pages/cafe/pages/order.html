@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tuxedo Cat Coffee</title>
-        <link rel="stylesheet" href="../css/menu.css" />
+        <link rel="stylesheet" href="../css/order.css" />
     </head>
     <body>
         <div class="parent">
@@ -19,7 +19,7 @@
             <div class="div2">
                 <ul>
                     <li id="home"><a href="../index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li id="faq"><a href="faq.html">FAQ</a></li>
                 </ul>
@@ -90,7 +90,7 @@
                 <section>
                     <h2>Your Order</h2>
                     <section>
-                        <select id="order" name="order" size="6"> </select>
+                        <select id="order" name="order" size="6"></select>
                         <p id="total">&nbsp;</p>
                     </section>
                     <section id="buttons">
@@ -99,7 +99,6 @@
                             name="place_order"
                             id="place_order"
                             value="Place Order"
-                            onclick="window.location.href='pages/checkout.html';"
                         />
                         <input
                             type="button"
@@ -113,5 +112,6 @@
             
         </div>
         <script src="../js/script.js"></script>
+        <script src="../js/validation.js"></script>
     </body>
 </html>

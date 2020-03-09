@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+body::after {
+  content: '';
+  background-image: url(../images/background.jpg);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+h1 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 72px;
+}
+ul {
+  list-style-type: none;
+  text-align: justify;
+  min-width: 500px;
+  padding: 2% 0 0;
+  margin: 0;
+}
+ul::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+ul li {
+  display: inline-block;
+  font-size: 30;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+input {
+  width: 150px;
+  margin-right: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+#logo {
+  float: inline-end;
+}
+#owner {
+  padding-right: 16px;
+  max-width: 536px;
+  float: left;
+}
+#line {
+  width: 100%;
+  border: 1px solid black;
+}

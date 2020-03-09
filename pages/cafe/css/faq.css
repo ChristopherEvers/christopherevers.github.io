@@ -4,7 +4,7 @@ body {
 }
 body::after {
   content: '';
-  background: url(../images/background.jpg);
+  background-image: url(../images/background.jpg);
   opacity: 0.25;
   top: 0;
   left: 0;
@@ -13,22 +13,34 @@ body::after {
   position: absolute;
   z-index: -1;
 }
-select {
-  width: 305px;
-}
 h1 {
   display: inline-block;
   font-weight: normal;
   font-size: 72px;
 }
-h2 {
+ul {
+  list-style-type: none;
+  text-align: justify;
+  min-width: 500px;
+  padding: 2% 0 0;
+  margin: 0;
+}
+ul::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+ul li {
+  display: inline-block;
+  font-size: 30;
   padding: 0;
-  margin: 0 0 15px;
+  margin: 0;
 }
 p {
   margin: 0;
   padding: 0;
 }
+
 input {
   width: 150px;
   margin-right: 5px;
@@ -37,13 +49,6 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-}
-#total {
-  margin-top: 0.5em;
-  margin-bottom: 0.7em;
-}
-#buttons {
-  margin-top: 0;
 }
 #logo {
   float: inline-end;
@@ -56,28 +61,27 @@ a {
 #line {
   border: 1px solid black;
 }
-.div2 ul {
-  list-style-type: none;
-  text-align: justify;
-  min-width: 500px;
-  padding: 0;
-  margin: 0;
-}
-.div2 ul::after {
+#repeat {
+  margin-top: 100vh;
+  height: 290vh;
+  width: auto;
   content: '';
-  display: inline-block;
-  width: 100%;
+  background-image: url(../images/background.jpg);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
-.div2 ul li {
-  display: inline-block;
-  font-size: 30;
-  padding: 0;
-  margin: 0;
+.question {
+  font-size: 30px;
 }
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 11vh 10vh 70vh;
+  grid-template-rows: 11vh 10vh 1500px;
   grid-column-gap: 16px;
   grid-row-gap: 0px;
 
@@ -97,18 +101,9 @@ a {
 .div3 {
   grid-area: 3 / 1 / 4 / 4;
 
-  width: 465px;
   margin: 0 auto;
+  padding: 2% 0 10%;
   display: flex;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-}
-ul li {
-  display: inline;
-  padding: 5px 0 5px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
