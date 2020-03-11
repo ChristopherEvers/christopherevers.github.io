@@ -7,6 +7,24 @@ window.addEventListener('load', () => {
   let temperatureDegree = document.querySelector('.temperature-degree');
   let locationTimezone = document.querySelector('.location-timezone');
   let icon = document.querySelector('.icon');
+  let button = document.querySelector('.button');
+  let unit = document.getElementsByTagName('span');
+
+  button.addEventListener('click', () => {
+    if (unit[0].textContent === '° F') {
+      temperatureDegree.textContent = (
+        ((temperatureDegree.textContent - 32) * 5) /
+        9
+      ).toFixed(0);
+      unit[0].textContent = '° C';
+    } else if (unit[0].textContent === '° C') {
+      temperatureDegree.textContent = (
+        (temperatureDegree.textContent * 9) / 5 +
+        32
+      ).toFixed(0);
+      unit[0].textContent = '° F';
+    }
+  });
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
@@ -26,7 +44,6 @@ window.addEventListener('load', () => {
           return response.json();
         })
         .then(data => {
-          // console.log(data);
           const {temp, weather} = data.data[0];
           //set DOM elements to location
           temperatureDegree.textContent = ((temp * 9) / 5 + 32).toFixed(0);
