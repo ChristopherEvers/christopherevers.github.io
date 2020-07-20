@@ -37,15 +37,19 @@ ul li {
   margin: 0;
 }
 p {
-  font-size: 22px;
+  font-size: 36px;
   margin: 0;
   padding: 0;
+}
+.div3 p {
+  font-size: 42px;
 }
 input {
   width: 150px;
   margin-right: 5px;
 }
 a {
+  font-size: 28px;
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -103,13 +107,13 @@ a {
 
   text-align: center;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
   .div3 p {
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
   }
-  #owner {
-    padding: 0 30px;
+  p {
+    font-size: 26px;
   }
   h1 {
     font-size: 52px;
@@ -118,56 +122,61 @@ a {
 
 @media only screen and (max-width: 1024px) {
   #owner {
-    max-width: 90%;
     padding-bottom: 2%;
+    max-height: 240px;
   }
   a {
     font-size: 24px;
   }
   .div3 {
-    justify-content: center;
+    padding-top: 4%;
     display: block;
   }
-  #owner {
-    max-width: 90%;
-    padding-bottom: 2%;
+  .div3 p {
+    font-size: 19px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-height: 1366px) {
+  .div3 {
+    padding-top: 4%;
   }
   .div3 p {
     font-size: 32px;
   }
-  p {
-    font-size: 28px;
+  #owner {
+    max-width: 800px;
+    max-height: 800px;
+    margin-right: 100%;
   }
-}
-@media only screen and (max-height: 768px) {
-  .div3 p {
+  p {
     font-size: 22px;
   }
-  #owner {
-    padding: 1% 16%;
-    max-height: 300px;
+  .parent {
+    grid-column-gap: 4px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .div3 p {
+    font-size: 20px;
   }
   p {
     font-size: 18px;
   }
-}
-@media only screen and (max-width: 768px) {
-  .div3 p {
-    font-size: 24px;
-  }
-  p {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 768px) {
   #owner {
     max-width: 90%;
-    padding-bottom: 2%;
+    padding: 0 16% 2%;
   }
 }
 @media only screen and (max-width: 480px) {
   ul {
     min-width: 0px;
+  }
+  #owner {
+    max-width: 90%;
+    padding: 0 4% 2%;
   }
   h1 {
     font-size: 30px;
@@ -177,12 +186,13 @@ a {
     font-size: 18px;
   }
   .div3 p {
-    font-size: 14px;
+    font-size: 16px;
   }
   p {
     font-size: 12px;
   }
   .parent {
     grid-column-gap: 4px;
+    grid-template-rows: 11vh 10vh 50vh 20vh;
   }
 }
