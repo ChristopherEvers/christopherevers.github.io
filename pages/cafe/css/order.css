@@ -37,6 +37,7 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 3vh;
 }
 #total {
   margin-top: 0.5em;
@@ -47,11 +48,6 @@ a {
 }
 #logo {
   float: inline-end;
-}
-#owner {
-  padding-right: 16px;
-  max-width: 536px;
-  float: left;
 }
 #line {
   border: 1px solid black;
@@ -112,13 +108,13 @@ ul li {
   display: inline;
   padding: 5px 0 5px 0;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
   .div3 p {
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
   }
-  #owner {
-    padding: 1% 5%;
+  p {
+    font-size: 26px;
   }
   h1 {
     font-size: 52px;
@@ -126,71 +122,69 @@ ul li {
 }
 
 @media only screen and (max-width: 1024px) {
-  #owner {
-    max-width: 90%;
-    padding-bottom: 2%;
-  }
   a {
     font-size: 24px;
   }
+  .div3 img {
+    width: 25%;
+  }
   .div3 {
-    justify-content: center;
     display: block;
   }
-  #owner {
-    max-width: 90%;
-    padding-bottom: 2%;
+  .div2 ul {
+    padding-top: 1%;
   }
   .div3 p {
-    font-size: 32px;
+    font-size: 19px;
   }
   p {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
-@media only screen and (max-height: 768px) {
+@media only screen and (max-width: 768px) {
+  .div3 {
+    width: auto;
+  }
   .div3 p {
-    font-size: 22px;
+    font-size: 20px;
   }
-  #owner {
-    max-height: 280px;
-  }
+
   p {
     font-size: 18px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .div3 p {
-    font-size: 24px;
-  }
-  p {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #owner {
-    max-width: 90%;
-    padding-bottom: 2%;
   }
 }
 @media only screen and (max-width: 480px) {
-  ul {
+  img {
+    width: 80px;
+  }
+  #order {
+    width: 80%;
+  }
+  .div2 ul {
     min-width: 0px;
+    margin-bottom: -10px;
+  }
+  #logo {
+    width: 25%;
   }
   h1 {
-    font-size: 30px;
+    font-size: 3vh;
     text-align: center;
   }
   a {
+    font-size: 12px;
+  }
+
+  .div3 {
+    padding-top: 0%;
+  }
+  .div3 h2 {
     font-size: 18px;
   }
   .div3 p {
-    font-size: 14px;
-  }
-  p {
     font-size: 12px;
   }
   .parent {
-    grid-column-gap: 4px;
+    grid-template-rows: 11vh 8vh 70vh;
   }
 }
