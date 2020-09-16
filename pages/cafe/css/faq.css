@@ -54,6 +54,7 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 3vh;
 }
 #logo {
   float: inline-end;
