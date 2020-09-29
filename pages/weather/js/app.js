@@ -56,4 +56,39 @@ window.addEventListener('load', () => {
         });
     });
   }
+  const input = document.getElementById('pac-input');
+  const searchBox = new google.maps.places.SearchBox(input);
+
+  searchBox.addListener('places_changed', () => {
+    const place = searchBox.getPlaces();
+    if (place.length == 0) {
+      return;
+    }
+    //Rerun api with new lat and long from searchbox
+    long = place[0].geometry.location.lng();
+    lat = place[0].geometry.location.lat();
+
+    const api = `https://weatherbit-v1-mashape.p.rapidapi.com/forecast/hourly?lang=en&hours=120&lat=${lat}&lon=${long}`;
+    fetch(api, {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-host': 'weatherbit-v1-mashape.p.rapidapi.com',
+        'x-rapidapi-key': '0b9b97bcecmsh03c284633a2ee9dp1ab800jsn6fedfe2034b0',
+      },
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        const {temp, weather} = data.data[0];
+        //set DOM elements to location
+        temperatureDegree.textContent = ((temp * 9) / 5 + 32).toFixed(0);
+        temperatureDescription.textContent = weather.description;
+        locationTimezone.textContent = data.city_name;
+        icon.innerHTML = `<img src="https://www.weatherbit.io/static/img/icons/${weather.icon}.png">`;
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  });
 });

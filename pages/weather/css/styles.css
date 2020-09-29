@@ -51,7 +51,7 @@ a {
   border-radius: 20px;
 
   background-color: rgb(66, 132, 255); /* Light */
-  background-color: #rgb(0, 22, 121))f; /* Dark */
+  background-color: rgb(0, 22, 121))f; /* Dark */
 }
 
 a div[class^='wave-'] {
@@ -129,4 +129,19 @@ a:hover .wave-2 {
   100% {
     transform: rotate3d(0, 0, 1, -180deg);
   }
+}
+
+#pac-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  margin-top: 10px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
 }

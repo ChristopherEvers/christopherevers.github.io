@@ -42,7 +42,7 @@ ul li {
   margin: 0;
 }
 p {
-  font-size: 30px;
+  font-size: 26px;
   margin: 0;
   padding: 0;
 }
@@ -54,7 +54,7 @@ input {
   margin-right: 5px;
 }
 a {
-  font-size: 28px;
+  font-size: 3vh;
   text-decoration: none;
   color: black;
   font-weight: 500;
